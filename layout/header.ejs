@@ -1,48 +1,125 @@
-<header class="border-bottom border-3">
-  <nav class="container d-flex justify-content-between align-items-center py-6">
-    <div class="headerLeft d-flex align-items-center">
-      <h1 class="me-12">
-        <a class="fs-4 align-middle" href="#">
+<header class="sticky-top bg-romance border-bottom border-3">
+  <div
+    class="container d-flex justify-content-between align-items-center py-3 py-md-6"
+  >
+    <div class="d-flex">
+      <h1 class="me-6 me-md-12">
+        <a class="d-flex align-items-center fs-4" href="./index.html">
           <img
-            class="logo me-4"
+            class="logo me-md-4"
             src="../assets/images/logo.png"
             alt="logo"
-          />7TAO
-          <span class="fontPrimary fs-8 fw-bold align-middle"
+          />
+          <span class="d-none d-lg-block me-md-1">7TAO</span>
+          <span class="d-none d-lg-block serif fs-md-8 fw-bold"
             >活動訂票網</span
-          ></a
-        >
+          >
+        </a>
       </h1>
       <form class="d-flex align-items-center">
         <input
-          class="headerSearchBar form-control border-2 border-primary"
+          class="headerSearchBar form-control border-2"
           type="search"
           placeholder="探索活動"
           aria-label="Search"
         />
         <button
-          class="headerSearchBtn btn btn-primary border-2 border-primary"
+          class="headerSearchBtn d-flex justify-content-center align-items-center btn btn-primary border-2"
           type="submit"
         >
           <i class="icofont-search-1 text-secondary"></i>
         </button>
       </form>
     </div>
-    <div class="headerRight">
-      <ul class="d-flex list-unstyled mb-0">
-        <li class="me-6">
-          <a href="#" class="fs-7">
-            <i class="icofont-ui-file me-1"></i>
+    <nav class="navbar">
+      <button
+        class="d-flex align-items-center px-3 py-1 border border-1 rounded h-100 d-md-none"
+        data-bs-toggle="collapse"
+        href="#burger"
+        role="button"
+        aria-expanded="false"
+        aria-controls="burger"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <ul class="headerMenuSelect d-none d-md-flex mb-0">
+        <li class="me-md-6">
+          <a
+            href="#"
+            class="yeseva fs-7"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            <i class="icofont-ui-file"></i>
             REGISTER
           </a>
         </li>
         <li>
-          <a href="#" class="fs-7">
-            <i class="icofont-ui-user me-1"></i>
+          <a href="#" class="yeseva fs-7">
+            <i class="icofont-ui-user"></i>
             LOGIN
           </a>
         </li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
+
+<div class="collapse" id="burger">
+  <ul class="container border-bottom border-3 py-4">
+    <li class="mb-3">
+      <a
+        class="yeseva fs-7"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+      >
+        <i class="icofont-ui-file me-md-1"></i>
+        REGISTER
+      </a>
+    </li>
+    <li>
+      <a href="#" class="yeseva fs-7">
+        <i class="icofont-ui-user me-md-1"></i>
+        LOGIN
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header d-block position-relative">
+        <h5 class="modal-title" id="staticBackdropLabel">立刻成為7TAO會員</h5>
+        <button
+          type="button"
+          class="btn-close position-absolute top-0 end-0 mt-5 me-6 p-0"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body py-8 py-md-12">
+        <p class="mb-6">
+          立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。<br />
+          您也可以先報名活動，日後再註冊帳號，<br />
+          系統會在認證您的Email後，協助您找回舊的訂單。
+        </p>
+        <button
+          type="button"
+          class="btn btn-primary btnHover sans fw-bold fs-6 px-8 py-2"
+        >
+          立即成為會員
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

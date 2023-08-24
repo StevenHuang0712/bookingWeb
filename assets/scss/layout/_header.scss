@@ -1,20 +1,37 @@
 .logo {
-  background-image: url(../images/logo-ANSWER.svg);
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 53px;
-  height: 53px;
+  width: 40px;
+ 
+  @include pad {
+    width: 53px;
+  }
 }
 
 .headerSearchBar {
-  width: 284px;
-  height: 55px;
+  width: 168px;
+  height: 39px;
+
+  @include pad {
+    width: 284px;
+    height: 51px;
+  }
 }
 
 .headerSearchBtn {
-  width: 55px;
-  height: 55px;
+  width: 39px;
+  height: 39px;
+
+  @include pad {
+    width: 51px;
+    height: 51px;
+  }
+}
+
+.headerMenuSelect {
+  a {
+    &:hover {
+      color: #9C9E18;
+    }
+  }
 }
 
 .icofont-search-1 {

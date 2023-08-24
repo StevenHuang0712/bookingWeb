@@ -1,4 +1,4 @@
-h2, h3 {
+h1, h2, h3 {
     font-family: 'Yeseva One', cursive;
 }
 
@@ -10,11 +10,26 @@ p {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-.fontPrimary {
+.yeseva {
+    font-family: 'Yeseva One', cursive;
+}
+
+.serif {
     font-family: 'Noto Serif TC', serif;
 }
 
-.fontSecondary {
+.sans {
     font-family: 'Noto Sans TC', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+ol, ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 

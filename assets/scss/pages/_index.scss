@@ -2,31 +2,145 @@
   background-image: url(../images/event/13.jpg);
   background-size: cover;
   background-position: center;
-  width: 1296px;
-  height: 518px;
+  width: calc(100% - 24px);
+  height: 350px;
+
+  @include pc {
+    width: 1296px;
+    height: 518px;
+  }
 }
 
 .indexEventListItem {
-  padding: 35px 58px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include pad {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 }
 
 .indexEventIcon {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
+
+  @include pad {
+    width: 80px;
+    height: 80px;
+  }
 }
 
-.indexRecentImgBg {
+.lh {
+  line-height: 32px;
+
+  @include pad {
+    line-height: 60px;
+  }
+}
+
+.indexOnlineImg {
+  background-image: url(../images/event/online.jpg);
+  background-size: cover;
+  background-position: 50% 33%;
+  max-width: 100%;
+  height: 158px;
+
+  @include pc {
+    height: 317px;
+  }
+}
+
+.indexAlbums {
+  padding-top: 48px;  
+  padding-bottom: 48px;  
+
+  @include pad {
+    padding-top: 60px;  
+    padding-bottom: 60px; 
+  }
+}
+
+.indexAlbumsCard {
+  img {
+    object-fit: cover;
+    height: 267px;
+
+    @include pad {
+      height: 274px;
+    }
+  }
+}
+
+.albumsTag {
+  transform: translate(-50%, -50%) rotate(-4deg);
+}
+
+.-rotate-2 {
+  transform: rotate(-2deg) !important;
+}
+.rotate-2 {
+  transform: rotate(2deg) !important;
+}
+
+.indexContactIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.indexSubscribe {
+  @include pad {
+    border-left: none !important;
+  }
+}
+
+.eventImgBg {
   background-image: url(../images/event/04.jpg);
   background-size: cover;
   background-position: 50% 45%;
+  max-width: 100%;
+  height: auto;
 }
 
-.indexRecentImg {
-  width: 416px;
-  height: 225px;
+.eventImg {
+  width: 351px;
+  height: 210px;
+
+  @include pad {
+    width: 416px;
+    height: 225px;
+  }
 }
 
-.indexSparklerIcon {
+.eventUnderline {
+  &:hover {
+    text-decoration-line: underline;
+  }
+}
+
+.eventStateCircle {
+
+  &::before {
+    position: absolute;
+    top: -3.5px;
+    left: -10px;
+    content: '';
+    width: 29px;
+    height: 29px;
+    background-color: $secondary;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;    
+    }
+  }
+}
+
+.sparklerIcon {
   width: 24px;
   height: 24px;
 }

@@ -1,0 +1,35 @@
+// tag
+.tag {
+    padding: 4px 16px 4px 12px;
+    border: 1px solid black;
+    border-left: 4px solid black;
+
+    @include pad {
+      padding-left: 20px;
+      padding-right: 24px;
+    }
+      &:hover {
+        background-color: black;
+        color: white !important;
+        border-left: 4px solid $secondary;
+        border-top: none;
+        border-bottom: none;
+      }
+  }
+
+// button
+.btnHover {
+    &:hover {
+        color: $secondary;
+    }
+}
+
+// swiper
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.swiper-slide {
+  letter-spacing: 3.2px;
+  width: auto;
+}
